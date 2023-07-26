@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Signup</title>
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+        <style>
+body {
+  background-image: url('https://img.lovepik.com/background/20211021/large/lovepik-football-particles-background-image_400214019.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>
+</head>
+<body>
+    <center>
+    <form method="POST" action="/signup">
+        <!-- Heading -->
+        <h4>
+            Create an account
+        </h4>
+
+        <!-- Subheading -->
+        <p >
+            Please fill up your information below to sign up.
+        </p>
+
+        <!-- Email -->
+        <div>
+            <label>Email:</label>
+            <div>
+                <input id = "jaja" type="email"  name="email" id="emailStr" required>
+            </div>
+        </div>
+        <label>password:</label>
+            <div class="input-group">
+                <input id="jaja" type="password"  name="password" minlength="6" required>
+            </div>
+
+        <!-- Password -->
+        <div>
+            <label>Username:</label>
+            <div class="input-group">
+                <input id="jaja" type="text"  name="Username" minlength="6">
+            </div>
+        </div>
+           <div>
+            <label>BIO:</label>
+            <div class="input-group">
+                <input id="jaja" type="text"  name="bio" maxlength="280">
+            </div>
+        </div>
+        
+        <!-- Button -->
+        <div>
+            <input id="jaja" type="submit"/>
+        </div>
+    </form>
+    <br>
+    <a href="/"><button id="jaja">signin</button></a>
+    </center>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>all tweets</title>
+</head>
+<body>
+	<h1>all your "wonderful" thoughts</h1>
+	<ul>
+		{%for key,tweet in tweeta.items()%}
+			<li>
+				<h3>{{tweet.title}}</h3>
+				<p>{{tweet.text}}</p>
+
+
+
+			</li>
+		{%endfor%}	
+<a href="/add_tweet"><button>add tweet</button>	
+<a href="{{ url_for('search')}}">Go to search</a>
+
+
+</body>
+</html>
